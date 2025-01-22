@@ -1,51 +1,41 @@
-# React + TypeScript + Vite
+# feedReact contruido com React + TypeScript + Vite
+FeedReact é um projeto desenvolvido com React focado em exibir e gerenciar um feed dinâmico de postagens. Este repositório demonstra o uso de componentes reutilizáveis, gerenciamento de estado e integração com APIs modernas para criar uma interface de usuário fluida e responsiva.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Funcionalidades
 
-Currently, two official plugins are available:
+- Exibição de postagens dinâmicas no feed.
+- Ações de interação como curtidas, comentários e compartilhamentos.
+- Interface responsiva e amigável para dispositivos móveis e desktops.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias Utilizadas
 
-## Expanding the ESLint configuration
+- **React**: Biblioteca principal para a construção da interface.
+- **TypeScript**: Lógica de desenvolvimento tipada para maior segurança e manutenção do código.
+- **CSS Modules / Styled Components**: Estilização modular e escalável (especifique qual está sendo usado).
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Instalação e Execução
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone o repositório:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+   ```bash
+   git clone https://github.com/Danielcard99/feedReact.git
+   ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Navegue até o diretório do projeto
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+   ```bash
+   cd feedReact
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-# feedReact
+3. Instale as dependências
+
+   ```bash
+   npm install
+   ```
+
+4. Execute o prjeto
+
+   ```bash
+   npm run dev
+   ```
+
